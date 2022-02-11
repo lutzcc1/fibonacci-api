@@ -6,7 +6,7 @@ class FibonacciIndexCalculator
   def call
     @index = Integer(@index)
 
-    raise ArgumentError if @index < 0
+    raise ArgumentError if @index < 0 || @index > 1000
 
     return { value: 0 } if @index == 0
     return { value: 1 } if @index == 1

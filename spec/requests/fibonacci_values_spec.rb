@@ -21,5 +21,10 @@ RSpec.describe "FibonacciValues", type: :request do
       get fibonacci_values_path('one')
       expect(JSON.parse(response.body)).to eq({ 'error' => 'invalid input' })
     end
+
+    it "returns an error JSON when request includes a big index" do
+      get fibonacci_values_path('1001')
+      expect(JSON.parse(response.body)).to eq({ 'error' => 'invalid input' })
+    end
   end
 end
