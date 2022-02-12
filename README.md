@@ -7,7 +7,7 @@ There is a need for a Rest (or Rest-like) API that can receive an index `n` and 
 The first values of the Fibonacci sequence are 0, 1, 1, 2, 3, 5, 8, 13, ..., so, if we were to give the API the index `n=3`, we should get the response value `2`, and if we request `n=6`, we should get `8` as the response, and so on.
 
 ## How to use
-Make GET requests to the endpoint `https://control-hub-fibonacci-api.herokuapp.com/fibonacci-values/<index>`, placing the index number you want to request in the `<index>` field.
+Make `GET` requests to the endpoint `https://control-hub-fibonacci-api.herokuapp.com/fibonacci-values/<index>`, placing the index number you want to request in the `<index>` field.
 
 ## Implementation
 
